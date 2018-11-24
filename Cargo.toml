@@ -1,6 +1,13 @@
 [package]
 name = "b64"
 version = "0.1.0"
+description = "Base64 Library with a fully configurable Base64 type"
+readme = "README.md"
+repository = "https://github.com/NickHackman/b64"
+keywords = ["Base64", "base64"]
+categories = ["Base64", "base64"]
+license = "GNU General Public License v3.0"
+license-file = "LICENSE"
 authors = ["Nick Hackman <nicholazwow@gmail.com>"]
 edition = "2018"
 
