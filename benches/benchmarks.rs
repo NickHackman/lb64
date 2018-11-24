@@ -3,8 +3,8 @@ extern crate criterion;
 
 use criterion::Criterion;
 
-use base64::config::{MIME, STANDARD};
-use base64::Base64;
+use lb64::config::{MIME, STANDARD};
+use lb64::Base64;
 
 fn bench_convert_to_decimal(c: &mut Criterion) {
     c.bench_function("Convert b64 to decimal", move |b| {
