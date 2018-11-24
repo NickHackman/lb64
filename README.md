@@ -21,7 +21,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-lb64 = "0.1.0"
+lb64 = "0.1.1"
 ```
 
 Add this to your `src/main.rs` or `src/lib.rs`:
