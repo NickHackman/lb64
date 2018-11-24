@@ -11,9 +11,9 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64; // Import/Include crate
-    /// use base64::{Base64}; // Base64
-    /// use base64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
+    /// extern crate lb64; // Import/Include crate
+    /// use lb64::{Base64}; // Base64
+    /// use lb64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
     ///
     /// fn main() {
     ///     let b64 = Base64::new_encode_unsigned(&128, URL_SAFE_NO_PADDING); // Sets b64 to the equivalent Base64 of 128
@@ -47,9 +47,9 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64; // Import/Include crate
-    /// use base64::{Base64}; // Base64
-    /// use base64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
+    /// extern crate lb64; // Import/Include crate
+    /// use lb64::{Base64}; // Base64
+    /// use lb64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
     ///
     /// fn main() {
     ///     let mut b64 = Base64::default(); // Sets b64 to default which is Standard config and "A"
@@ -79,9 +79,9 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64;
-    /// use base64::{Base64};
-    /// use base64::config::MIME; // Include MIME config
+    /// extern crate lb64;
+    /// use lb64::{Base64};
+    /// use lb64::config::MIME; // Include MIME config
     ///
     /// fn main() {
     ///     let word: &str = "Hi";
@@ -103,9 +103,9 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64;
-    /// use base64::{Base64};
-    /// use base64::config::MIME; // Include MIME config
+    /// extern crate lb64;
+    /// use lb64::{Base64};
+    /// use lb64::config::MIME; // Include MIME config
     ///
     /// fn main() {
     ///     let word: &str = "Hi";

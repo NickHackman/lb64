@@ -10,10 +10,10 @@
 //! `IMAP` and `MIME` compliant configs along with full fledged support of creating your own Base64 type.
 //! Furthermore, supports random generation of a n long Base64 number.
 //! ```
-//! extern crate base64;
+//! extern crate lb64;
 //!
-//! use base64::Base64;
-//! use base64::config::{Config, MIME};
+//! use lb64::Base64;
+//! use lb64::config::{Config, MIME};
 //!
 //! fn main() {
 //!    let s: &str = "Hello!";
@@ -89,8 +89,8 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64; // Import/Include crate
-    /// use base64::{Base64}; // Base64
+    /// extern crate lb64; // Import/Include crate
+    /// use lb64::{Base64}; // Base64
     ///
     /// fn main() {
     ///     let b64 = Base64::default(); // Creates new Base64 of value "A"
@@ -116,9 +116,9 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64; // Import/Include crate
-    /// use base64::{Base64}; // Base64
-    /// use base64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
+    /// extern crate lb64; // Import/Include crate
+    /// use lb64::{Base64}; // Base64
+    /// use lb64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
     ///
     /// fn main() {
     ///     let b64 = Base64::new_random(5, URL_SAFE_NO_PADDING); // Sets the length to 5 and randomly generates the values
@@ -144,9 +144,9 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64; // Import/Include crate
-    /// use base64::{Base64}; // Base64
-    /// use base64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
+    /// extern crate lb64; // Import/Include crate
+    /// use lb64::{Base64}; // Base64
+    /// use lb64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
     ///
     /// fn main() {
     ///     let mut b64 = Base64::new_random(5, URL_SAFE_NO_PADDING); // Sets the length to 5 and randomly generates the values
@@ -171,9 +171,9 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64; // Import/Include crate
-    /// use base64::{Base64}; // Base64
-    /// use base64::config::{URL_SAFE_NO_PADDING}; // Constant config
+    /// extern crate lb64; // Import/Include crate
+    /// use lb64::{Base64}; // Base64
+    /// use lb64::config::{URL_SAFE_NO_PADDING}; // Constant config
     ///
     /// fn main() {
     ///     let mut b64 = Base64::new_random(5, URL_SAFE_NO_PADDING); // Sets the length to 5 and randomly generates the values
@@ -203,9 +203,9 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64; // Import/Include crate
-    /// use base64::{Base64}; // Base64
-    /// use base64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
+    /// extern crate lb64; // Import/Include crate
+    /// use lb64::{Base64}; // Base64
+    /// use lb64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
     ///
     /// fn main() {
     ///     let b64 = Base64::new_from_string("Hello", URL_SAFE_PADDING); // Sets b64 to the string if the string is valid Base64
@@ -240,9 +240,9 @@ impl<'a> Base64<'a> {
     ///
     /// # Example
     /// ```
-    /// extern crate base64; // Import/Include crate
-    /// use base64::{Base64}; // Base64
-    /// use base64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
+    /// extern crate lb64; // Import/Include crate
+    /// use lb64::{Base64}; // Base64
+    /// use lb64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
     ///
     /// fn main() {
     ///     let mut b64 = Base64::new_encode_unsigned(&63, URL_SAFE_NO_PADDING); // Sets b64 to _
@@ -293,9 +293,9 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64; // Import/Include crate
-    /// use base64::{Base64}; // Base64
-    /// use base64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
+    /// extern crate lb64; // Import/Include crate
+    /// use lb64::{Base64}; // Base64
+    /// use lb64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
     ///
     /// fn main() {
     ///     let mut b64 = Base64::new_encode_unsigned(&63, URL_SAFE_NO_PADDING); // Sets b64 to _
@@ -332,9 +332,9 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64; // Import/Include crate
-    /// use base64::{Base64}; // Base64
-    /// use base64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
+    /// extern crate lb64; // Import/Include crate
+    /// use lb64::{Base64}; // Base64
+    /// use lb64::config::{URL_SAFE_NO_PADDING, URL_SAFE_PADDING}; // Constant configs
     ///
     /// fn main() {
     ///     let mut b64 = Base64::new_encode_unsigned(&63, URL_SAFE_NO_PADDING); // Sets b64 to _
@@ -357,9 +357,9 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64; // Import/Include crate
-    /// use base64::{Base64}; // Base64
-    /// use base64::config::{URL_SAFE_PADDING, URL_SAFE_NO_PADDING}; // Constant configs
+    /// extern crate lb64; // Import/Include crate
+    /// use lb64::{Base64}; // Base64
+    /// use lb64::config::{URL_SAFE_PADDING, URL_SAFE_NO_PADDING}; // Constant configs
     ///
     /// fn main() {
     ///     let mut b64 = Base64::new_encode_unsigned(&63, URL_SAFE_PADDING); // Sets b64 to _===

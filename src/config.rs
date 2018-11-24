@@ -43,9 +43,9 @@ impl<'a> Config<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64;
+    /// extern crate lb64;
     ///
-    /// use base64::config::Config;
+    /// use lb64::config::Config;
     ///
     /// fn main() {
     ///     let character_set = &[
@@ -94,9 +94,9 @@ impl<'a> Config<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64;
+    /// extern crate lb64;
     ///
-    /// use base64::config::Config;
+    /// use lb64::config::Config;
     ///
     /// fn main() {
     ///     let character_set_orig = &[
@@ -139,9 +139,9 @@ impl<'a> Config<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64;
+    /// extern crate lb64;
     ///
-    /// use base64::config::MIME;
+    /// use lb64::config::MIME;
     ///
     /// fn main() {
     ///     println!("{:?}", MIME.get_character_set()); // Prints a slice containing [A-Z], [a-z], [0-9], +, and /
@@ -155,9 +155,9 @@ impl<'a> Config<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64;
+    /// extern crate lb64;
     ///
-    /// use base64::config::MIME;
+    /// use lb64::config::MIME;
     ///
     /// fn main() {
     ///     match MIME.get_line_length() {
@@ -174,10 +174,10 @@ impl<'a> Config<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64;
+    /// extern crate lb64;
     ///
-    /// use base64::config::Config;
-    /// use base64::error::ConfigError;
+    /// use lb64::config::Config;
+    /// use lb64::error::ConfigError;
     ///
     /// fn main() {
     ///     let character_set = &[
@@ -202,9 +202,9 @@ impl<'a> Config<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64;
+    /// extern crate lb64;
     ///
-    /// use base64::config::MIME;
+    /// use lb64::config::MIME;
     ///
     /// fn main() {
     ///     match MIME.get_padding() {
@@ -226,9 +226,9 @@ impl<'a> Config<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64;
+    /// extern crate lb64;
     ///
-    /// use base64::config::Config;
+    /// use lb64::config::Config;
     ///
     /// fn main() {
     ///     let character_set = &[
@@ -272,8 +272,8 @@ impl<'a> Config<'a> {
 ///
 /// # Example:
 /// ```
-/// extern crate base64;
-/// use base64::{config, Base64};
+/// extern crate lb64;
+/// use lb64::{config, Base64};
 ///
 /// fn main() {
 ///     let b64 = Base64::new_encode_unsigned(&63, config::MIME); // Creates a MIME Compliant b64 of value 0
@@ -308,8 +308,8 @@ pub const MIME: &Config = {
 ///
 /// # Example:
 /// ```
-/// extern crate base64;
-/// use base64::{config, Base64};
+/// extern crate lb64;
+/// use lb64::{config, Base64};
 ///
 /// fn main() {
 ///     let b64 = Base64::new_encode_unsigned(&63, config::IMAP); // Creates a IMAP Compliant b64 of value 63
@@ -344,8 +344,8 @@ pub const IMAP: &Config = {
 ///
 /// # Example:
 /// ```
-/// extern crate base64;
-/// use base64::{config, Base64};
+/// extern crate lb64;
+/// use lb64::{config, Base64};
 ///
 /// fn main() {
 ///     let b64 = Base64::new_encode_unsigned(&63, config::URL_SAFE_PADDING); // Creates a base64url Compliant b64 of value 63
@@ -382,8 +382,8 @@ pub const URL_SAFE_PADDING: &Config = {
 ///
 /// # Example:
 /// ```
-/// extern crate base64;
-/// use base64::{config, Base64};
+/// extern crate lb64;
+/// use lb64::{config, Base64};
 ///
 /// fn main() {
 ///     let b64 = Base64::new_encode_unsigned(&63, config::URL_SAFE_NO_PADDING); // Creates a base64url Compliant b64 without padding of value 0
@@ -420,8 +420,8 @@ pub const URL_SAFE_NO_PADDING: &Config = {
 ///
 /// # Example:
 /// ```
-/// extern crate base64;
-/// use base64::{config, Base64};
+/// extern crate lb64;
+/// use lb64::{config, Base64};
 ///
 /// fn main() {
 ///     let b64 = Base64::new_encode_unsigned(&63, config::STANDARD); // Creates a Standard Compliant b64 of value 63

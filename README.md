@@ -1,11 +1,11 @@
-# b64
+# lb64
 
 ----
 A Rust library for Base64 encoding and decoding unsigned integers and bytes.
 
-b64 strives to be panic and unsafe free with minimal dependencies and excellent documentation.
+lb64 strives to be panic and unsafe free with minimal dependencies and excellent documentation.
 
-b64 provides the ability to both utilize common Base64 configurations, such as `IMAP`, `STANDARD`, `MIME`, and `Base64url` and also provides the utilities to create your own Base64 configuration. It also creates a full fledged Base64 type and creation of a random Base64 number of n length.
+lb64 provides the ability to both utilize common Base64 configurations, such as `IMAP`, `STANDARD`, `MIME`, and `Base64url` and also provides the utilities to create your own Base64 configuration. It also creates a full fledged Base64 type and creation of a random Base64 number of n length.
 
 See more information on [Wikipedia](https://en.wikipedia.org/wiki/Base64)
 
@@ -21,35 +21,35 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-b64 = "0.1.0"
+lb64 = "0.1.0"
 ```
 
 Add this to your `src/main.rs` or `src/lib.rs`:
 ```rust
-extern crate base64;
+extern crate lb64;
 ```
 
 ## Example
 ```Rust
-extern crate base64;
+extern crate lb64;
 
-use base64::Base64;
-use base64::config::{Config, MIME};
+use lb64::Base64;
+use lb64::config::{Config, MIME};
 
 fn main() {
     let s: &str = "Hello!";
     let b64 = Base64::new_encode_bytes(s.as_bytes(), MIME);
     println!("{}", b64);
     let mut v: u128 = 0;
-    match b64.decode_to_unsigned() {
+    match lb64.decode_to_unsigned() {
          Ok(value) => v = value,
          Err(e) => println!("{}", e),
     }
-    let b64_other = Base64::new_encode_unsigned(&v, MIME);
-    if b64_other == b64 {
+    let lb64_other = Base64::new_encode_unsigned(&v, MIME);
+    if lb64_other == b64 {
          println!("They're equal!");
     }
-    match String::from_utf8(b64.decode_to_bytes()) {
+    match String::from_utf8(lb64.decode_to_bytes()) {
          Ok(value) => println!("{}", value), // prints Hello
          Err(e) => println!("{}", e),
     }
@@ -57,4 +57,4 @@ fn main() {
 ```
 
 ## License
-b64 is distributed under the [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+lb64 is distributed under the [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0.en.html)

@@ -8,8 +8,8 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64;
-    /// use base64::{Base64, config::STANDARD};
+    /// extern crate lb64;
+    /// use lb64::{Base64, config::STANDARD};
     ///
     /// fn main() {
     ///     let word: &str = "Hello";
@@ -34,8 +34,8 @@ impl<'a> Base64<'a> {
     ///
     /// # Example:
     /// ```
-    /// extern crate base64;
-    /// use base64::{Base64, config::STANDARD};
+    /// extern crate lb64;
+    /// use lb64::{Base64, config::STANDARD};
     ///
     /// fn main() {
     ///     let mut b64 =  Base64::new_encode_unsigned(&8, STANDARD);

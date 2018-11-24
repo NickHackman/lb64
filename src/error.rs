@@ -115,7 +115,7 @@ pub enum Base64Error {
     /// [Base64::decode_to_unsigned](../struct.Base64.html#method.decode_to_unsigned)
     /// # Example:
     /// ```
-    /// use base64::{Base64, config::MIME};
+    /// use lb64::{Base64, config::MIME};
     ///
     /// let b64 = Base64::new_random(999, MIME);
     /// match b64.decode_to_unsigned() {
@@ -129,7 +129,7 @@ pub enum Base64Error {
     /// Only applies to [Base64::new_from_string](../struct.Base64.html#method.new_from_string)
     /// # Example:
     /// ```
-    /// use base64::{Base64, config::MIME};
+    /// use lb64::{Base64, config::MIME};
     ///
     /// match Base64::new_from_string(&"^_^", MIME) {
     ///     Ok(value) => println!("This is impossible"),
