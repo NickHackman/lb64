@@ -1,8 +1,8 @@
 //! Simple example to show encoding and decoding of bytes using the MIME compliant config constant
-extern crate base64; // Include base64 crate
+extern crate lb64; // Include base64 crate
 
-use base64::config::MIME;
-use base64::Base64;
+use lb64::config::MIME;
+use lb64::Base64;
 
 fn main() {
     let s: &str = "Somebody once told me the world is gonna roll me

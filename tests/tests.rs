@@ -1,13 +1,13 @@
-extern crate base64;
+extern crate lb64;
 
 #[cfg(test)]
 mod tests {
     #[allow(unused_imports)] // Allow imports of everything
-    use base64::config::{Config, IMAP, MIME, STANDARD, URL_SAFE_NO_PADDING, URL_SAFE_PADDING};
+    use lb64::config::{Config, IMAP, MIME, STANDARD, URL_SAFE_NO_PADDING, URL_SAFE_PADDING};
     #[allow(unused_imports)] // Allow imports of everything
-    use base64::error::{Base64Error, ConfigError};
+    use lb64::error::{Base64Error, ConfigError};
     #[allow(unused_imports)] // Allow imports of everything
-    use base64::Base64;
+    use lb64::Base64;
 
     #[test]
     fn create_from_10() {

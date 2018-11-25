@@ -1,6 +1,6 @@
 [package]
 name = "lb64"
-version = "0.1.1"
+version = "0.1.2"
 description = "Base64 Library with a fully configurable Base64 type"
 readme = "README.md"
 repository = "https://github.com/NickHackman/lb64"

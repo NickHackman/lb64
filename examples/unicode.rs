@@ -1,8 +1,8 @@
 //! Uses unicode characters in order to encode and decode both unsigned and strings into and from
 //! Base64. This code panics on errors just to show an example.
-extern crate base64; // Include base64 crate
+extern crate lb64; // Include base64 crate
 
-use base64::{config::Config, Base64};
+use lb64::{config::Config, Base64};
 
 fn main() {
     let character_set = &[

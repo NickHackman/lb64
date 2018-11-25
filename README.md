@@ -1,5 +1,7 @@
 # lb64
 
+[![Crate](https://img.shields.io/crates/v/lb64.svg)](https://crates.io/crates/lb64) [![API](https://docs.rs/lb64/badge.svg)](https://docs.rs/lb64)
+
 ----
 A Rust library for Base64 encoding and decoding unsigned integers and bytes.
 
@@ -21,7 +23,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-lb64 = "0.1.1"
+lb64 = "0.1.2"
 ```
 
 Add this to your `src/main.rs` or `src/lib.rs`:
@@ -56,7 +58,7 @@ fn main() {
  }
 ```
 
-[Documentation](https://docs.rs/lb64/0.1.0/lb64/)
+[Documentation](https://docs.rs/lb64/)
 
 ## License
 lb64 is distributed under the [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0.en.html)
